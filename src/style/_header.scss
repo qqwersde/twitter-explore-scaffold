@@ -5,4 +5,18 @@
   align-items: center;
   padding: 20px 60px;
 
+  h1{
+    font-size: 50px;
+
+  }
+
+  nav{
+    >ul{
+      display: flex;
+      >li {
+        margin-right: 10px;
+        border-radius: $border-radius;
+      }
+    }
+  }
 }
