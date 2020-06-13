@@ -1,0 +1,57 @@
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  h1{
+    padding: 10px 30px;
+  }
+
+  form{
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-self: flex-start;
+
+    label{
+      padding-top: 10px;
+    }
+    input[type=text] {
+      width: 100%;
+      padding: 12px 10px;
+      margin: 8px 0;
+      background-color:$body-bg;
+      border-style:none;
+      border-bottom:1px solid $border-color;
+      color: $white;
+      font-size: inherit;
+
+      &:focus{
+        outline: none;
+        background-color:$body-bg;
+      }
+    }
+  }
+
+  a{
+    align-self: flex-start;
+    padding: 10px 10px;
+    width: 100%;
+    color: $primary-color;
+    &:hover{
+      color: $link-hover-color;
+    }
+  }
+
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+}
