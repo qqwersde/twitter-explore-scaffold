@@ -3,17 +3,15 @@
   font-size: $font-size;
 }
 
-/*@mixin btn-variant($button-padding-x, $button-padding-y,$color,$bg-color,$border-color,$hover-color,$hoverbg-color){
+@mixin btn-variant($button-padding-x,$button-padding-y,$color,$bg-color,$border-color,$hover-color,$hoverbg-color,$h-border-color) {
   padding: $button-padding-x $button-padding-y;
   color: $color;
   background-color: $bg-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
+  border-color: $border-color;
 
   &:hover {
     color: $hover-color;
-    border-color: $hover-color;
-    background-color:$hoverbg-color ;
-  }*/
-
-
+    background-color: $hoverbg-color;
+    border-color: $h-border-color;
+  }
+}

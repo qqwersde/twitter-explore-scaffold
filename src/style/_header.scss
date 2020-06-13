@@ -15,8 +15,19 @@
       display: flex;
       >li {
         margin-right: 10px;
+        &:last-child{
+          margin-right: 0;
+        }
         border-radius: $border-radius;
+        .login{
+          @extend .btn;
+          @include btn-variant($button-padding-x,$button-padding-y,$primary-color,$body-bg,$primary-color,$white,$primary-color,transparent);
 
+        }
+        .register{
+          @extend .btn;
+          @include btn-variant($button-padding-x,$button-padding-y,$white,$primary-color,transparent,$primary-color,$body-bg,$primary-color)
+        }
       }
     }
   }
