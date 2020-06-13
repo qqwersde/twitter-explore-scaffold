@@ -50,10 +50,21 @@
   div{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: $padding $padding;
+    padding: 20px $padding;
 
+    .login{
+      padding: 20px $padding;
+      @extend .btn;
+      @include btn-variant($containerbutton-padding-x,$containerbutton-padding-y,$primary-color,$body-bg,$primary-color,$white,$primary-color,transparent);
+
+    }
+    .register{
+      padding: 20px $padding;
+      @extend .btn;
+      @include btn-variant($containerbutton-padding-x,$containerbutton-padding-y,$white,$primary-color,transparent,$primary-color,$body-bg,$primary-color)
+    }
 
   }
 }
