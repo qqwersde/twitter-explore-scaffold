@@ -5,11 +5,11 @@
   justify-content: space-between;
 
   h1{
-    padding: 10px 30px;
+    padding: $padding 30px;
   }
 
   form{
-    padding: 10px 10px;
+    padding: $padding $padding;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -18,11 +18,11 @@
     align-self: flex-start;
 
     label{
-      padding-top: 10px;
+      padding-top: $padding;
     }
     input[type=text] {
       width: 100%;
-      padding: 12px 10px;
+      padding: 12px $padding;
       margin: 8px 0;
       background-color:$body-bg;
       border-style:none;
@@ -39,7 +39,7 @@
 
   a{
     align-self: flex-start;
-    padding: 10px 10px;
+    padding: $padding $padding;
     width: 100%;
     color: $primary-color;
     &:hover{
@@ -52,6 +52,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: $padding $padding;
+
+
   }
 }
