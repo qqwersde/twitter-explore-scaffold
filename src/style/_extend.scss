@@ -1,6 +1,6 @@
 .btn {
   cursor: pointer;
-  padding: 10px 40px;
+  padding: $button-padding-x $button-padding-y;
   color: $primary-color;
   background-color: $body-bg;
   border: 1px solid $primary-color;
@@ -10,5 +10,9 @@
     color: $white;
     border-color: transparent;
     background-color: $primary-color;
+  }
+
+  &:focus{
+    outline: none;
   }
 }
